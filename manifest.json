@@ -1,0 +1,10 @@
+{
+  "name": "協同準則學習系統",
+  "short_name": "協同準則",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#14532d",
+  "description": "協同準則100題練習、模擬考與方塊消除遊戲",
+  "icons": []
+}
