@@ -1,0 +1,9 @@
+{
+  "name": "協同準則 AI 學習系統",
+  "short_name": "協同準則",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f1b15",
+  "theme_color": "#17281f",
+  "icons": []
+}
