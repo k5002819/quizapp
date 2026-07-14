@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#17281f">
 <link rel="manifest" href="manifest.json">
-<title>協同準則 AI 學習系統 V5.1 自行選題版</title>
+<title>協同準則 AI 學習系統 V5.2 區段練習合成版</title>
 <style>
 :root{--bg:#0f1b15;--card:#17281f;--text:#eef8ef;--muted:#a7b8aa;--gold:#d5b15f;--green:#4ade80;--red:#fb7185;--yellow:#fde68a;--blue:#93c5fd;--line:#35503d}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei","Noto Sans TC",sans-serif;background:linear-gradient(180deg,#0b1711,#15271d);color:var(--text)}button,input,textarea{font:inherit}.wrap{max-width:1100px;margin:auto;padding:16px 14px 90px}.hero,.card{background:rgba(23,40,31,.94);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 10px 28px #0004}h1{margin:0 0 6px;font-size:26px}.sub,.small{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}.btn{border:1px solid #49664e;background:#254331;color:#fff;border-radius:14px;padding:12px 10px;font-weight:700}.btn.primary{background:linear-gradient(135deg,#b48a30,#6b4e17);border-color:#e0bd67}.btn.danger{background:#6d2430}.btn.ghost{background:#13251b}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:#102116;font-size:13px}textarea{width:100%;min-height:120px;border-radius:16px;border:1px solid #45634b;background:#0c1912;color:#fff;padding:12px;margin:10px 0}.qtitle{font-size:20px;line-height:1.55;font-weight:800}.answerBox,.diffBox{line-height:1.9;background:#0c1912;border:1px solid #304b36;border-radius:16px;padding:12px;white-space:pre-wrap;word-break:break-word}mark{border-radius:5px;padding:1px 2px;margin:0 1px}.ok{color:var(--green);background:#12331f}.miss{color:#553f00;background:#fff1a8}.extra{color:#10233f;background:#bfdbfe}.hidden{display:none!important}.stat{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}@media(min-width:700px){.stat{grid-template-columns:repeat(5,1fr)}}.stat div{background:#102116;border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:22px;color:var(--gold)}.listItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:#102116}.selectTools{position:sticky;top:0;z-index:5;background:#17281f;border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:10px}.selectList{max-height:58vh;overflow:auto;padding-right:3px}.selectItem{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:10px;margin:7px 0;background:#102116}.selectItem input{width:21px;height:21px;margin-top:2px;flex:none}.selectItem label{line-height:1.45;flex:1}.subjectCount{color:var(--gold);font-weight:700}.progress{height:10px;background:#0b1711;border-radius:999px;overflow:hidden;border:1px solid var(--line)}.bar{height:100%;background:linear-gradient(90deg,#d5b15f,#4ade80);width:0%}.board{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;max-width:420px;margin:12px auto;background:#07110c;padding:8px;border-radius:16px;border:1px solid var(--line)}.cell{aspect-ratio:1;border-radius:6px;background:#203629;border:1px solid #2d4a36}.cell.fill{background:linear-gradient(135deg,#d5b15f,#6fa66a)}.pieces{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.piece{border:2px solid var(--line);border-radius:14px;padding:8px;background:#102116}.piece.sel{border-color:#f3c866;box-shadow:0 0 0 3px #f3c86633}.mini{display:grid;gap:3px}.miniCell{width:18px;height:18px;border-radius:4px;background:#d5b15f}.miniEmpty{width:18px;height:18px}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei","Noto Sans TC",sans-serif;background:linear-gradient(180deg,#0b1711,#15271d);color:var(--text)}button,input,textarea{font:inherit}.wrap{max-width:1100px;margin:auto;padding:16px 14px 90px}.hero,.card{background:rgba(23,40,31,.94);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 10px 28px #0004}h1{margin:0 0 6px;font-size:26px}.sub,.small{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}.btn{border:1px solid #49664e;background:#254331;color:#fff;border-radius:14px;padding:12px 10px;font-weight:700}.btn.primary{background:linear-gradient(135deg,#b48a30,#6b4e17);border-color:#e0bd67}.btn.danger{background:#6d2430}.btn.ghost{background:#13251b}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:#102116;font-size:13px}textarea{width:100%;min-height:120px;border-radius:16px;border:1px solid #45634b;background:#0c1912;color:#fff;padding:12px;margin:10px 0}.qtitle{font-size:20px;line-height:1.55;font-weight:800}.answerBox,.diffBox{line-height:1.9;background:#0c1912;border:1px solid #304b36;border-radius:16px;padding:12px;white-space:pre-wrap;word-break:break-word}mark{border-radius:5px;padding:1px 2px;margin:0 1px}.ok{color:var(--green);background:#12331f}.miss{color:#553f00;background:#fff1a8}.extra{color:#10233f;background:#bfdbfe}.hidden{display:none!important}.stat{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}@media(min-width:700px){.stat{grid-template-columns:repeat(5,1fr)}}.stat div{background:#102116;border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:22px;color:var(--gold)}.listItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:#102116}.practiceGroup{border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 0;background:#102116}.practiceGroup h3{margin:0 0 10px;color:var(--gold)}.rangeRow{display:grid;grid-template-columns:minmax(90px,1fr) 1fr 1fr;gap:8px;align-items:center;margin:7px 0}.rangeName{font-weight:800}.rangeBtn{padding:9px 7px}.practiceTop{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}@media(max-width:520px){.rangeRow{grid-template-columns:1fr 1fr}.rangeName{grid-column:1/-1}}.selectTools{position:sticky;top:0;z-index:5;background:#17281f;border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:10px}.selectList{max-height:58vh;overflow:auto;padding-right:3px}.selectItem{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:10px;margin:7px 0;background:#102116}.selectItem input{width:21px;height:21px;margin-top:2px;flex:none}.selectItem label{line-height:1.45;flex:1}.subjectCount{color:var(--gold);font-weight:700}.progress{height:10px;background:#0b1711;border-radius:999px;overflow:hidden;border:1px solid var(--line)}.bar{height:100%;background:linear-gradient(90deg,#d5b15f,#4ade80);width:0%}.board{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;max-width:420px;margin:12px auto;background:#07110c;padding:8px;border-radius:16px;border:1px solid var(--line)}.cell{aspect-ratio:1;border-radius:6px;background:#203629;border:1px solid #2d4a36}.cell.fill{background:linear-gradient(135deg,#d5b15f,#6fa66a)}.pieces{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.piece{border:2px solid var(--line);border-radius:14px;padding:8px;background:#102116}.piece.sel{border-color:#f3c866;box-shadow:0 0 0 3px #f3c86633}.mini{display:grid;gap:3px}.miniCell{width:18px;height:18px;border-radius:4px;background:#d5b15f}.miniEmpty{width:18px;height:18px}
 </style>
 </head>
 <body>
 <div class="wrap">
-<div class="hero"><h1>🎖 協同準則 AI 學習系統 V5.1 自行選題版</h1><div class="sub">新增自行選題功能｜可依科目勾選、依序或隨機作答｜內建 100 題</div></div>
+<div class="hero"><h1>🎖 協同準則 AI 學習系統 V5.2 區段練習合成版</h1><div class="sub">新增重疊區段練習｜1–8、7–16 等區段皆可依序或隨機｜內建 100 題</div></div>
 <section id="home">
 <div class="card"><h2>學習儀表板</h2><div class="stat" id="stats"></div><div class="progress"><div class="bar" id="todayBar"></div></div><p class="small">今日目標：20 題。資料儲存在本機瀏覽器。</p></div>
 <div class="grid"><button class="btn primary" onclick="showPracticeMenu()">開始練習</button><button class="btn primary" onclick="showCustomSelect()">自行選題</button><button class="btn primary" onclick="showExamMenu()">模擬考</button><button class="btn" onclick="startGame()">方塊消除</button><button class="btn" onclick="showMistakes()">錯題庫</button><button class="btn" onclick="showFavorites()">收藏題</button><button class="btn" onclick="showSearch()">搜尋題目</button><button class="btn" onclick="showStatsPage()">學習統計</button><button class="btn danger" onclick="resetData()">清除紀錄</button></div>
@@ -124,8 +124,82 @@ function startCustomQuestions(randomOrder){
   startSession(`自行選題（${pool.length}題）`,pool,false);
 }
 
-function showPracticeMenu(){hideAll();menu.classList.remove("hidden");menu.innerHTML=`<h2>一般練習</h2><div class="grid"><button class="btn" onclick="startSeq('陸綱',1,20)">陸綱 1-20</button><button class="btn" onclick="startSeq('陸綱',21,40)">陸綱 21-40</button><button class="btn" onclick="startSeq('指參',1,20)">指參 1-20</button><button class="btn" onclick="startSeq('指參',21,40)">指參 21-40</button><button class="btn" onclick="startSeq('情報',1,10)">情報 1-10</button><button class="btn" onclick="startSeq('聯兵營',1,10)">聯兵營 1-10</button><button class="btn primary" onclick="startMix20()">20題混合</button><button class="btn primary" onclick="startMix40()">40題全範圍</button></div><p><button class="btn ghost" onclick="backHome()">回首頁</button></p>`}
-function startSeq(c,a,b){startSession(`${c} ${a}-${b}`,by(c,a,b),false)} function startMix20(){startSession("20題混合",pick([...by("陸綱",1,20),...by("指參",1,20),...by("情報",1,10),...by("聯兵營",1,10)],20),false)} function startMix40(){startSession("40題全範圍",pick(QUESTIONS,40),false)}
+function rangeRow(cat,a,b,label){
+  return `<div class="rangeRow">
+    <div class="rangeName">${label}</div>
+    <button class="btn rangeBtn" onclick="startRange('${cat}',${a},${b},false)">▶ 依序</button>
+    <button class="btn rangeBtn" onclick="startRange('${cat}',${a},${b},true)">🔀 隨機</button>
+  </div>`;
+}
+
+function showPracticeMenu(){
+  hideAll();
+  menu.classList.remove("hidden");
+  menu.innerHTML=`
+    <h2>一般練習</h2>
+    <div class="practiceTop">
+      <button class="btn primary" onclick="showCustomSelect()">🎯 自行選題</button>
+      <button class="btn primary" onclick="startMix20()">20題混合</button>
+      <button class="btn primary" onclick="startMix40()">40題全範圍</button>
+      <button class="btn ghost" onclick="backHome()">回首頁</button>
+    </div>
+
+    <div class="practiceGroup">
+      <h3>陸綱</h3>
+      ${rangeRow('陸綱',1,8,'1–8')}
+      ${rangeRow('陸綱',7,16,'7–16')}
+      ${rangeRow('陸綱',15,24,'15–24')}
+      ${rangeRow('陸綱',23,32,'23–32')}
+      ${rangeRow('陸綱',31,40,'31–40')}
+      ${rangeRow('陸綱',1,20,'1–20')}
+      ${rangeRow('陸綱',21,40,'21–40')}
+      ${rangeRow('陸綱',1,40,'1–40 全部')}
+    </div>
+
+    <div class="practiceGroup">
+      <h3>指參</h3>
+      ${rangeRow('指參',1,8,'1–8')}
+      ${rangeRow('指參',7,16,'7–16')}
+      ${rangeRow('指參',15,24,'15–24')}
+      ${rangeRow('指參',23,32,'23–32')}
+      ${rangeRow('指參',31,40,'31–40')}
+      ${rangeRow('指參',1,20,'1–20')}
+      ${rangeRow('指參',21,40,'21–40')}
+      ${rangeRow('指參',1,40,'1–40 全部')}
+    </div>
+
+    <div class="practiceGroup">
+      <h3>情報</h3>
+      ${rangeRow('情報',1,5,'1–5')}
+      ${rangeRow('情報',6,10,'6–10')}
+      ${rangeRow('情報',1,10,'1–10 全部')}
+    </div>
+
+    <div class="practiceGroup">
+      <h3>聯兵營</h3>
+      ${rangeRow('聯兵營',1,5,'1–5')}
+      ${rangeRow('聯兵營',6,10,'6–10')}
+      ${rangeRow('聯兵營',1,10,'1–10 全部')}
+    </div>`;
+}
+
+function startRange(cat,a,b,randomOrder){
+  let pool=by(cat,a,b);
+  if(randomOrder) pool=shuffle(pool);
+  startSession(`${cat} ${a}-${b}${randomOrder?'（隨機）':'（依序）'}`,pool,false);
+}
+
+function startSeq(c,a,b){
+  startRange(c,a,b,false);
+}
+
+function startMix20(){
+  startSession("20題混合",pick([...by("陸綱",1,20),...by("指參",1,20),...by("情報",1,10),...by("聯兵營",1,10)],20),false);
+}
+
+function startMix40(){
+  startSession("40題全範圍",pick(QUESTIONS,40),false);
+}
 function showExamMenu(){hideAll();menu.classList.remove("hidden");menu.innerHTML=`<h2>模擬考</h2><div class="grid"><button class="btn primary" onclick="startExam(1,20,95)">第一階段 20題｜95合格</button><button class="btn primary" onclick="startExam(2,100,97)">第二階段 100題｜97合格</button><button class="btn primary" onclick="startExam(3,100,99)">第三階段 100題｜99合格</button></div><p><button class="btn ghost" onclick="backHome()">回首頁</button></p>`}
 function startExam(s,n,p){session.examPass=p;startSession(`第${s}階段模擬考`,pick(QUESTIONS,n),true)} function startSession(m,pool,isExam){session={mode:m,pool,index:0,results:[],examPass:isExam?session.examPass:null,start:Date.now()};hideAll();quiz.classList.remove("hidden");renderQ()} function cur(){return session.pool[session.index]}
 function renderQ(){const q=cur();if(!q){finishSession();return}modeLabel.textContent=session.mode;countLabel.textContent=`${session.index+1} / ${session.pool.length}`;scoreLabel.textContent=`已批改 ${session.results.length} 題`;questionText.textContent=`${q.cat}${q.num}｜${q.q}`;sourceText.textContent=q.src||"";userAnswer.value="";answerText.classList.add("hidden");answerText.textContent=q.a;gradeResult.classList.add("hidden")}
