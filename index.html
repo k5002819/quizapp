@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#17281f">
 <link rel="manifest" href="manifest.json">
-<title>協同準則 AI 學習系統 V5.3 模擬考與隨機修正版</title>
+<title>協同準則 AI 學習系統 V5.4 百分制扣分上限版</title>
 <style>
 :root{--bg:#0f1b15;--card:#17281f;--text:#eef8ef;--muted:#a7b8aa;--gold:#d5b15f;--green:#4ade80;--red:#fb7185;--yellow:#fde68a;--blue:#93c5fd;--line:#35503d}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei","Noto Sans TC",sans-serif;background:linear-gradient(180deg,#0b1711,#15271d);color:var(--text)}button,input,textarea{font:inherit}.wrap{max-width:1100px;margin:auto;padding:16px 14px 90px}.hero,.card{background:rgba(23,40,31,.94);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 10px 28px #0004}h1{margin:0 0 6px;font-size:26px}.sub,.small{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}.btn{border:1px solid #49664e;background:#254331;color:#fff;border-radius:14px;padding:12px 10px;font-weight:700}.btn.primary{background:linear-gradient(135deg,#b48a30,#6b4e17);border-color:#e0bd67}.btn.danger{background:#6d2430}.btn.ghost{background:#13251b}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:#102116;font-size:13px}textarea{width:100%;min-height:120px;border-radius:16px;border:1px solid #45634b;background:#0c1912;color:#fff;padding:12px;margin:10px 0}.qtitle{font-size:20px;line-height:1.55;font-weight:800}.answerBox,.diffBox{line-height:1.9;background:#0c1912;border:1px solid #304b36;border-radius:16px;padding:12px;white-space:pre-wrap;word-break:break-word}mark{border-radius:5px;padding:1px 2px;margin:0 1px}.ok{color:var(--green);background:#12331f}.miss{color:#553f00;background:#fff1a8}.extra{color:#10233f;background:#bfdbfe}.hidden{display:none!important}.stat{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}@media(min-width:700px){.stat{grid-template-columns:repeat(5,1fr)}}.stat div{background:#102116;border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:22px;color:var(--gold)}.listItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:#102116}.practiceGroup{border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 0;background:#102116}.practiceGroup h3{margin:0 0 10px;color:var(--gold)}.rangeRow{display:grid;grid-template-columns:minmax(90px,1fr) 1fr 1fr;gap:8px;align-items:center;margin:7px 0}.rangeName{font-weight:800}.rangeBtn{padding:9px 7px}.practiceTop{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}@media(max-width:520px){.rangeRow{grid-template-columns:1fr 1fr}.rangeName{grid-column:1/-1}}.selectTools{position:sticky;top:0;z-index:5;background:#17281f;border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:10px}.selectList{max-height:58vh;overflow:auto;padding-right:3px}.selectItem{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:10px;margin:7px 0;background:#102116}.selectItem input{width:21px;height:21px;margin-top:2px;flex:none}.selectItem label{line-height:1.45;flex:1}.subjectCount{color:var(--gold);font-weight:700}.progress{height:10px;background:#0b1711;border-radius:999px;overflow:hidden;border:1px solid var(--line)}.bar{height:100%;background:linear-gradient(90deg,#d5b15f,#4ade80);width:0%}.board{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;max-width:420px;margin:12px auto;background:#07110c;padding:8px;border-radius:16px;border:1px solid var(--line)}.cell{aspect-ratio:1;border-radius:6px;background:#203629;border:1px solid #2d4a36}.cell.fill{background:linear-gradient(135deg,#d5b15f,#6fa66a)}.pieces{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.piece{border:2px solid var(--line);border-radius:14px;padding:8px;background:#102116}.piece.sel{border-color:#f3c866;box-shadow:0 0 0 3px #f3c86633}.mini{display:grid;gap:3px}.miniCell{width:18px;height:18px;border-radius:4px;background:#d5b15f}.miniEmpty{width:18px;height:18px}
@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="wrap">
-<div class="hero"><h1>🎖 協同準則 AI 學習系統 V5.3 模擬考與隨機修正版</h1><div class="sub">區段練習、均勻隨機抽題與模擬考延後公布總分｜內建 100 題</div></div>
+<div class="hero"><h1>🎖 協同準則 AI 學習系統 V5.4 百分制扣分上限版</h1><div class="sub">區段練習、均勻隨機抽題與模擬考延後公布總分｜內建 100 題</div></div>
 <section id="home">
 <div class="card"><h2>學習儀表板</h2><div class="stat" id="stats"></div><div class="progress"><div class="bar" id="todayBar"></div></div><p class="small">今日目標：20 題。資料儲存在本機瀏覽器。</p></div>
 <div class="grid"><button class="btn primary" onclick="showPracticeMenu()">開始練習</button><button class="btn primary" onclick="showCustomSelect()">自行選題</button><button class="btn primary" onclick="showExamMenu()">模擬考</button><button class="btn" onclick="startGame()">方塊消除</button><button class="btn" onclick="showMistakes()">錯題庫</button><button class="btn" onclick="showFavorites()">收藏題</button><button class="btn" onclick="showSearch()">搜尋題目</button><button class="btn" onclick="showStatsPage()">學習統計</button><button class="btn danger" onclick="resetData()">清除紀錄</button></div>
@@ -227,35 +227,63 @@ function normalize(s){return (s||"").replace(/[\s\p{P}，。、；：？！「�
 function lcsMatrix(a,b){let m=Array(a.length+1).fill(0).map(()=>Array(b.length+1).fill(0));for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)m[i][j]=a[i-1]===b[j-1]?m[i-1][j-1]+1:Math.max(m[i-1][j],m[i][j-1]);return m}
 function diff(ans,user){const A=[...normalize(ans)],B=[...normalize(user)],m=lcsMatrix(A,B);let i=A.length,j=B.length,ops=[];while(i>0||j>0){if(i>0&&j>0&&A[i-1]===B[j-1]){ops.push(["ok",A[i-1]]);i--;j--}else if(j>0&&(i===0||m[i][j-1]>=m[i-1][j])){ops.push(["extra",B[j-1]]);j--}else if(i>0){ops.push(["miss",A[i-1]]);i--}}ops=ops.reverse();let wrong=ops.filter(x=>x[0]!=="ok").length;return {ops,score:Math.max(0,100-wrong*.5),wrong}}
 function renderDiff(ops){return ops.map(([t,ch])=>`<mark class="${t}">${ch}</mark>`).join("")}
+function recalcExamDeductions(){
+  let used=0;
+  [...session.results].sort((a,b)=>a.questionIndex-b.questionIndex).forEach(x=>{
+    const raw=Math.max(0,x.rawDeduction??x.deduction??0);
+    const applied=Math.min(raw,Math.max(0,100-used));
+    x.rawDeduction=raw;
+    x.appliedDeduction=applied;
+    used+=applied;
+  });
+  return Math.min(100,used);
+}
 function gradeCurrent(){
   const q=cur();
   if(!q)return;
   const r=diff(q.a,userAnswer.value),correct=r.ops.filter(x=>x[0]==="ok").length,miss=r.ops.filter(x=>x[0]==="miss").length,extra=r.ops.filter(x=>x[0]==="extra").length;
   const oldIndex=session.results.findIndex(x=>x.questionIndex===session.index);
-  const record={questionIndex:session.index,id:q.id,score:r.score,wrong:r.wrong,cat:q.cat,deduction:r.wrong*.5};
+  const rawDeduction=r.wrong*.5;
+  const record={questionIndex:session.index,id:q.id,score:r.score,wrong:r.wrong,cat:q.cat,deduction:rawDeduction,rawDeduction,appliedDeduction:rawDeduction};
   if(oldIndex>=0){
     session.results[oldIndex]=record;
   }else{
     session.results.push(record);
     updateDaily();state.answered++;state.totalScore+=r.score;state.daily[today()].answered++;state.daily[today()].score+=r.score;
   }
+  if(session.examPass!==null)recalcExamDeductions();
+  const current=session.results.find(x=>x.questionIndex===session.index);
   if(r.score<100&&!state.mistakes.some(x=>x.id===q.id))state.mistakes.push(q);
   saveState();
   scoreLabel.textContent=`已批改 ${session.results.length} 題`;
   gradeResult.classList.remove("hidden");
   answerText.classList.remove("hidden");
   if(session.examPass!==null){
-    gradeResult.innerHTML=`<h3>本題扣分：${(r.wrong*.5).toFixed(1)} 分</h3><div class="row"><span class="pill">正確 ${correct}</span><span class="pill">漏字 ${miss}</span><span class="pill">多字 ${extra}</span></div><h4>逐字標示</h4><div class="diffBox">${renderDiff(r.ops)}</div><p class="small">🟢正確　🟡漏字　🔵多字。錯字會以「漏字＋多字」呈現。模擬考總分將於全部題目完成後公布。</p>`;
+    const applied=current?.appliedDeduction||0;
+    const heading=applied>0?`<h3>本題扣分：${applied.toFixed(1)} 分</h3>`:`<h3>本題僅顯示需修正部分</h3>`;
+    const note=applied>0?`模擬考總分將於全部題目完成後公布。`:`累計扣分已達 100 分上限，本題不再扣分。`;
+    gradeResult.innerHTML=`${heading}<div class="row"><span class="pill">正確 ${correct}</span><span class="pill">漏字 ${miss}</span><span class="pill">多字 ${extra}</span></div><h4>逐字標示</h4><div class="diffBox">${renderDiff(r.ops)}</div><p class="small">🟢正確　🟡漏字　🔵多字。錯字會以「漏字＋多字」呈現。${note}</p>`;
   }else{
-    gradeResult.innerHTML=`<h3>批改結果：${r.score.toFixed(1)} 分</h3><div class="row"><span class="pill">正確 ${correct}</span><span class="pill">漏字 ${miss}</span><span class="pill">多字 ${extra}</span><span class="pill">扣分 ${(r.wrong*.5).toFixed(1)}</span></div><h4>逐字標示</h4><div class="diffBox">${renderDiff(r.ops)}</div><p class="small">🟢正確　🟡漏字　🔵多字。錯字會以「漏字＋多字」呈現。</p>`;
+    gradeResult.innerHTML=`<h3>批改結果：${r.score.toFixed(1)} 分</h3><div class="row"><span class="pill">正確 ${correct}</span><span class="pill">漏字 ${miss}</span><span class="pill">多字 ${extra}</span><span class="pill">扣分 ${rawDeduction.toFixed(1)}</span></div><h4>逐字標示</h4><div class="diffBox">${renderDiff(r.ops)}</div><p class="small">🟢正確　🟡漏字　🔵多字。錯字會以「漏字＋多字」呈現。</p>`;
   }
 }
 function finishSession(){
-  const n=session.pool.length,answered=session.results.length,total=session.results.reduce((s,x)=>s+x.score,0),avg=n?total/n:0,totalDeduction=session.results.reduce((s,x)=>s+(x.deduction||0),0),pass=session.examPass!==null?avg>=session.examPass:null;
-  const catDeduct={};session.results.forEach(x=>catDeduct[x.cat]=(catDeduct[x.cat]||0)+(x.deduction||0));
+  const n=session.pool.length,answered=session.results.length;
+  let finalScore,totalDeduction,pass;
+  if(session.examPass!==null){
+    totalDeduction=recalcExamDeductions();
+    finalScore=Math.max(0,100-totalDeduction);
+    pass=finalScore>=session.examPass;
+  }else{
+    const total=session.results.reduce((s,x)=>s+x.score,0);
+    finalScore=n?total/n:0;
+    totalDeduction=session.results.reduce((s,x)=>s+(x.deduction||0),0);
+    pass=null;
+  }
+  const catDeduct={};session.results.forEach(x=>{const d=session.examPass!==null?(x.appliedDeduction||0):(x.deduction||0);catDeduct[x.cat]=(catDeduct[x.cat]||0)+d});
   const catText=Object.entries(catDeduct).map(([cat,d])=>`${cat}扣分：${d.toFixed(1)} 分`).join("\n");
-  state.history.unshift({mode:session.mode,date:new Date().toLocaleString(),avg:avg.toFixed(1),n,pass});state.history=state.history.slice(0,30);saveState();hideAll();reportSec.classList.remove("hidden");
-  reportSec.innerHTML=`<h2>成績單</h2><div class="answerBox">模式：${session.mode}\n題數：${n}\n已批改：${answered}\n總分：${avg.toFixed(1)}\n總扣分：${totalDeduction.toFixed(1)} 分\n${catText}${catText?"\n":""}${pass===null?"":("結果："+(pass?"合格":"不合格")+"（標準 "+session.examPass+"）")}\n作答時間：${Math.round((Date.now()-session.start)/1000)} 秒</div><button class="btn primary" onclick="backHome()">回首頁</button>`;
+  state.history.unshift({mode:session.mode,date:new Date().toLocaleString(),avg:finalScore.toFixed(1),n,pass});state.history=state.history.slice(0,30);saveState();hideAll();reportSec.classList.remove("hidden");
+  reportSec.innerHTML=`<h2>成績單</h2><div class="answerBox">模式：${session.mode}\n題數：${n}\n已批改：${answered}\n總分：${finalScore.toFixed(1)}\n總扣分：${totalDeduction.toFixed(1)} 分（上限 100 分）\n${catText}${catText?"\n":""}${pass===null?"":("結果："+(pass?"合格":"不合格")+"（標準 "+session.examPass+"）")}\n作答時間：${Math.round((Date.now()-session.start)/1000)} 秒</div><button class="btn primary" onclick="backHome()">回首頁</button>`;
 }
 function toggleFav(){const q=cur(),i=state.fav.indexOf(q.id);i>=0?state.fav.splice(i,1):state.fav.push(q.id);saveState();alert(i>=0?"已取消收藏":"已加入收藏")}
 function showMistakes(){showList("錯題庫",state.mistakes,true)} function showFavorites(){showList("收藏題",QUESTIONS.filter(q=>state.fav.includes(q.id)),false)} function showList(title,arr,canClear){hideAll();listSec.classList.remove("hidden");listSec.innerHTML=`<h2>${title}</h2>${canClear?'<button class="btn danger" onclick="state.mistakes=[];saveState();showMistakes()">清空錯題</button>':''}${arr.length?arr.map(q=>`<div class="listItem"><b>${q.cat}${q.num}｜${q.q}</b><p>${q.a}</p><button class="btn" onclick="startSession('單題複習',[QUESTIONS.find(x=>x.id===${q.id})],false)">重做</button></div>`).join(""):"<p>目前沒有資料</p>"}<button class="btn ghost" onclick="backHome()">回首頁</button>`}
