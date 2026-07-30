@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#17281f">
 <link rel="manifest" href="manifest.json">
-<title>協同準則 AI 學習系統 V5.6 錯題分析＋百分制上限版</title>
+<title>協同準則 AI 學習系統 V5.7 完整錯題分析版</title>
 <style>
 :root{--bg:#0f1b15;--card:#17281f;--text:#eef8ef;--muted:#a7b8aa;--gold:#d5b15f;--green:#4ade80;--red:#fb7185;--yellow:#fde68a;--blue:#93c5fd;--line:#35503d}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft JhengHei","Noto Sans TC",sans-serif;background:linear-gradient(180deg,#0b1711,#15271d);color:var(--text)}button,input,textarea{font:inherit}.wrap{max-width:1100px;margin:auto;padding:16px 14px 90px}.hero,.card{background:rgba(23,40,31,.94);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 10px 28px #0004}h1{margin:0 0 6px;font-size:26px}.sub,.small{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}.btn{border:1px solid #49664e;background:#254331;color:#fff;border-radius:14px;padding:12px 10px;font-weight:700}.btn.primary{background:linear-gradient(135deg,#b48a30,#6b4e17);border-color:#e0bd67}.btn.danger{background:#6d2430}.btn.ghost{background:#13251b}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:#102116;font-size:13px}textarea{width:100%;min-height:120px;border-radius:16px;border:1px solid #45634b;background:#0c1912;color:#fff;padding:12px;margin:10px 0}.qtitle{font-size:20px;line-height:1.55;font-weight:800}.answerBox,.diffBox{line-height:1.9;background:#0c1912;border:1px solid #304b36;border-radius:16px;padding:12px;white-space:pre-wrap;word-break:break-word}mark{border-radius:5px;padding:1px 2px;margin:0 1px}.ok{color:var(--green);background:#12331f}.miss{color:#553f00;background:#fff1a8}.extra{color:#10233f;background:#bfdbfe}.hidden{display:none!important}.stat{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}@media(min-width:700px){.stat{grid-template-columns:repeat(5,1fr)}}.stat div{background:#102116;border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:22px;color:var(--gold)}.listItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:#102116}.practiceGroup{border:1px solid var(--line);border-radius:16px;padding:12px;margin:10px 0;background:#102116}.practiceGroup h3{margin:0 0 10px;color:var(--gold)}.rangeRow{display:grid;grid-template-columns:minmax(90px,1fr) 1fr 1fr;gap:8px;align-items:center;margin:7px 0}.rangeName{font-weight:800}.rangeBtn{padding:9px 7px}.practiceTop{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}@media(max-width:520px){.rangeRow{grid-template-columns:1fr 1fr}.rangeName{grid-column:1/-1}}.selectTools{position:sticky;top:0;z-index:5;background:#17281f;border:1px solid var(--line);border-radius:14px;padding:10px;margin-bottom:10px}.selectList{max-height:58vh;overflow:auto;padding-right:3px}.selectItem{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:10px;margin:7px 0;background:#102116}.selectItem input{width:21px;height:21px;margin-top:2px;flex:none}.selectItem label{line-height:1.45;flex:1}.subjectCount{color:var(--gold);font-weight:700}.progress{height:10px;background:#0b1711;border-radius:999px;overflow:hidden;border:1px solid var(--line)}.bar{height:100%;background:linear-gradient(90deg,#d5b15f,#4ade80);width:0%}.board{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;max-width:420px;margin:12px auto;background:#07110c;padding:8px;border-radius:16px;border:1px solid var(--line)}.cell{aspect-ratio:1;border-radius:6px;background:#203629;border:1px solid #2d4a36}.cell.fill{background:linear-gradient(135deg,#d5b15f,#6fa66a)}.pieces{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.piece{border:2px solid var(--line);border-radius:14px;padding:8px;background:#102116}.piece.sel{border-color:#f3c866;box-shadow:0 0 0 3px #f3c86633}.mini{display:grid;gap:3px}.miniCell{width:18px;height:18px;border-radius:4px;background:#d5b15f}.miniEmpty{width:18px;height:18px}
@@ -13,7 +13,7 @@
 </head>
 <body>
 <div class="wrap">
-<div class="hero"><h1>🎖 協同準則 AI 學習系統 V5.6 錯題分析＋百分制上限版</h1><div class="sub">錯題次數分析、常錯字統計、真正隨機抽題與模擬考百分制上限｜內建 100 題</div></div>
+<div class="hero"><h1>🎖 協同準則 AI 學習系統 V5.7 完整錯題分析版</h1><div class="sub">錯題次數分析、常錯字統計、真正隨機抽題與模擬考百分制上限｜內建 100 題</div></div>
 <section id="home">
 <div class="card"><h2>學習儀表板</h2><div class="stat" id="stats"></div><div class="progress"><div class="bar" id="todayBar"></div></div><p class="small">今日目標：20 題。資料儲存在本機瀏覽器。</p></div>
 <div class="grid"><button class="btn primary" onclick="showPracticeMenu()">開始練習</button><button class="btn primary" onclick="showCustomSelect()">自行選題</button><button class="btn primary" onclick="showExamMenu()">模擬考</button><button class="btn" onclick="startGame()">方塊消除</button><button class="btn" onclick="showMistakes()">錯題庫</button><button class="btn" onclick="showFavorites()">收藏題</button><button class="btn" onclick="showSearch()">搜尋題目</button><button class="btn" onclick="showStatsPage()">學習統計</button><button class="btn danger" onclick="resetData()">清除紀錄</button></div>
@@ -32,9 +32,18 @@ function loadState(){
   try{
     const data=Object.assign(d,JSON.parse(localStorage.getItem(LS_KEY)||"{}"));
     data.mistakes=(data.mistakes||[]).map(x=>{
-      if(x&&typeof x.count==="number")return x;
       const id=x?.id;
-      return {id,count:1,missCounts:{},extraCounts:{},lastOps:[],lastAnswer:"",lastAt:""};
+      return {
+        id,
+        count:Number(x?.count)||1,
+        missCounts:x?.missCounts||{},
+        extraCounts:x?.extraCounts||{},
+        segmentCounts:x?.segmentCounts||{},
+        lastOps:Array.isArray(x?.lastOps)?x.lastOps:[],
+        lastAnswer:x?.lastAnswer||"",
+        lastAt:x?.lastAt||"",
+        attempts:Array.isArray(x?.attempts)?x.attempts:[]
+      };
     }).filter(x=>QUESTIONS.some(q=>q.id===x.id));
     return data;
   }catch(e){return d}
@@ -239,20 +248,35 @@ function lcsMatrix(a,b){let m=Array(a.length+1).fill(0).map(()=>Array(b.length+1
 function diff(ans,user){const A=[...normalize(ans)],B=[...normalize(user)],m=lcsMatrix(A,B);let i=A.length,j=B.length,ops=[];while(i>0||j>0){if(i>0&&j>0&&A[i-1]===B[j-1]){ops.push(["ok",A[i-1]]);i--;j--}else if(j>0&&(i===0||m[i][j-1]>=m[i-1][j])){ops.push(["extra",B[j-1]]);j--}else if(i>0){ops.push(["miss",A[i-1]]);i--}}ops=ops.reverse();let wrong=ops.filter(x=>x[0]!=="ok").length;return {ops,score:Math.max(0,100-wrong*.5),wrong}}
 function renderDiff(ops){return ops.map(([t,ch])=>`<mark class="${t}">${ch}</mark>`).join("")}
 function addCharCount(map,ch){if(!ch)return;map[ch]=(map[ch]||0)+1}
+function getErrorSegments(ops){
+  const out=[];let miss="",extra="";
+  const flush=()=>{if(miss||extra){out.push({miss,extra});miss="";extra=""}};
+  (ops||[]).forEach(([t,ch])=>{
+    if(t==="ok"){flush();return}
+    if(t==="miss")miss+=ch;
+    if(t==="extra")extra+=ch;
+  });
+  flush();return out;
+}
+function segmentKey(seg){return `應寫「${seg.miss||"∅"}」／你寫「${seg.extra||"∅"}」`}
 function registerMistake(q,r,user){
   if(!r||r.wrong<=0)return;
   let item=state.mistakes.find(x=>x.id===q.id);
-  if(!item){item={id:q.id,count:0,missCounts:{},extraCounts:{},lastOps:[],lastAnswer:"",lastAt:""};state.mistakes.push(item)}
+  if(!item){item={id:q.id,count:0,missCounts:{},extraCounts:{},segmentCounts:{},lastOps:[],lastAnswer:"",lastAt:"",attempts:[]};state.mistakes.push(item)}
   item.count=(item.count||0)+1;
-  item.missCounts=item.missCounts||{};item.extraCounts=item.extraCounts||{};
+  item.missCounts=item.missCounts||{};item.extraCounts=item.extraCounts||{};item.segmentCounts=item.segmentCounts||{};
   r.ops.forEach(([t,ch])=>{if(t==="miss")addCharCount(item.missCounts,ch);if(t==="extra")addCharCount(item.extraCounts,ch)});
+  getErrorSegments(r.ops).forEach(seg=>addCharCount(item.segmentCounts,segmentKey(seg)));
   item.lastOps=r.ops;
   item.lastAnswer=user||"";
   item.lastAt=new Date().toLocaleString();
+  item.attempts=item.attempts||[];
+  item.attempts.unshift({at:item.lastAt,answer:item.lastAnswer,ops:r.ops,wrong:r.wrong});
+  item.attempts=item.attempts.slice(0,10);
 }
-function topErrorText(map,label){
-  const arr=Object.entries(map||{}).sort((a,b)=>b[1]-a[1]).slice(0,8);
-  return arr.length?`${label}：`+arr.map(([ch,n])=>`「${ch}」${n}次`).join("、"):`${label}：無`;
+function topErrorText(map,label,limit=8){
+  const arr=Object.entries(map||{}).sort((a,b)=>b[1]-a[1]).slice(0,limit);
+  return arr.length?`${label}：`+arr.map(([ch,n])=>`${ch.startsWith("應寫")?ch:`「${ch}」`} ${n}次`).join("、"):`${label}：無`;
 }
 function recalcExamDeductions(){
   let used=0;
@@ -317,10 +341,17 @@ function showMistakes(){
   hideAll();listSec.classList.remove("hidden");
   const rows=(state.mistakes||[]).slice().sort((a,b)=>(b.count||0)-(a.count||0)).map(m=>{
     const q=QUESTIONS.find(x=>x.id===m.id);if(!q)return "";
-    const last=m.lastOps?.length?`<h4>最近一次錯誤標示</h4><div class="diffBox">${renderDiff(m.lastOps)}</div>`:"";
-    return `<div class="listItem"><div class="row"><b>${q.cat}${q.num}｜${q.q}</b><span class="pill">錯誤 ${m.count||1} 次</span></div><p class="small">${topErrorText(m.missCounts,"常漏／錯字")}<br>${topErrorText(m.extraCounts,"常多／誤寫字")}</p>${last}<p class="small">最近錯誤時間：${m.lastAt||"尚無紀錄"}</p><details><summary>查看標準答案</summary><p>${q.a}</p></details><button class="btn" onclick="startSession('單題複習',[QUESTIONS.find(x=>x.id===${q.id})],false)">重做</button><button class="btn danger" onclick="removeMistake(${q.id})">移除此題</button></div>`;
+    const last=m.lastOps?.length?`<h4>最近一次錯誤標示</h4><div class="diffBox">${renderDiff(m.lastOps)}</div><p class="small"><b>最近作答：</b>${m.lastAnswer||"（空白）"}</p>`:"";
+    const segments=topErrorText(m.segmentCounts,"常錯部分",5);
+    const history=(m.attempts||[]).slice(0,5).map((a,i)=>`<div class="small" style="margin:6px 0">第 ${m.count-i} 次錯誤｜${a.at||""}｜錯誤字數 ${a.wrong||0}</div>`).join("");
+    return `<div class="listItem"><div class="row"><b>${q.cat}${q.num}｜${q.q}</b><span class="pill">累計錯誤 ${m.count||1} 次</span></div>
+      <div class="answerBox" style="margin-top:10px"><b>錯誤統計</b><br>${topErrorText(m.missCounts,"常漏／應寫字")}<br>${topErrorText(m.extraCounts,"常多／誤寫字")}<br>${segments}</div>
+      ${last}<p class="small">最近錯誤時間：${m.lastAt||"尚無紀錄"}</p>
+      ${history?`<details><summary>查看最近錯誤紀錄</summary>${history}</details>`:""}
+      <details><summary>查看標準答案</summary><p>${q.a}</p></details>
+      <button class="btn" onclick="startSession('單題複習',[QUESTIONS.find(x=>x.id===${q.id})],false)">重做</button><button class="btn danger" onclick="removeMistake(${q.id})">移除此題</button></div>`;
   }).join("");
-  listSec.innerHTML=`<h2>錯題庫</h2><p class="small">依錯誤次數排序，並統計最常漏寫、錯寫或多寫的字。</p><button class="btn danger" onclick="state.mistakes=[];saveState();showMistakes()">清空錯題</button>${rows||"<p>目前沒有資料</p>"}<button class="btn ghost" onclick="backHome()">回首頁</button>`;
+  listSec.innerHTML=`<h2>錯題庫｜錯誤次數與常錯分析</h2><p class="small">依累計錯誤次數排序；每次答錯都會記錄常漏字、誤寫字及反覆出錯的文字片段。</p><button class="btn danger" onclick="state.mistakes=[];saveState();showMistakes()">清空錯題</button>${rows||"<p>目前沒有資料。完成一次錯誤作答後，這裡會開始累積分析。</p>"}<button class="btn ghost" onclick="backHome()">回首頁</button>`;
 }
 function removeMistake(id){state.mistakes=state.mistakes.filter(x=>x.id!==id);saveState();showMistakes()}
 function showFavorites(){showList("收藏題",QUESTIONS.filter(q=>state.fav.includes(q.id)),false)}
